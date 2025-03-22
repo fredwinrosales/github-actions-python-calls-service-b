@@ -25,3 +25,5 @@ sudo ./svc.sh install
 sudo ./svc.sh start
 
 sudo systemctl status actions.runner.fredwinrosales-github-actions-python.*
+
+systemctl list-units | grep actions.runner
