@@ -11,7 +11,8 @@ def comunicar_con_typescript():
         respuesta = httpx.get(TARGET_URL)
         return {
             "mensaje_recibido": respuesta.json(),
-            "origen": "Microservicio A (Python)"
+            "origen": "Microservicio A (Python)",
+            "destino": TARGET_URL
         }
     except Exception as e:
         return {"error": str(e)}
