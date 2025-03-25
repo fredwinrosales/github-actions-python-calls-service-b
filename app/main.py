@@ -3,7 +3,7 @@ import httpx
 
 app = FastAPI()
 
-TARGET_URL = "http://10.43.127.150"
+TARGET_URL = "http://typescript-api-service"
 
 @app.get("/comunicar")
 def comunicar_con_typescript():
