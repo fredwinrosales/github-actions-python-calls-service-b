@@ -26,11 +26,11 @@ jobs:
         with:
           context: .
           push: true
-          tags: fredwinrosales/python-api:${{ github.sha }}
+          tags: fredwinrosales/python-api-calls-service-b:${{ github.sha }}
 
       - name: Update manifest with tag
         run: |
-          sed -i "s|fredwinrosales/python-api:latest|fredwinrosales/python-api:${{ github.sha }}|" k8s/deployment.yaml
+          sed -i "s|fredwinrosales/python-api-calls-service-b:latest|fredwinrosales/python-api-calls-service-b:${{ github.sha }}|" k8s/deployment.yaml
 
       - name: Deploy to Kubernetes
         run: |

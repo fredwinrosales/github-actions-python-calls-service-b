@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: python-api-service
+  name: python-api-calls-service-b-service
 spec:
   selector:
-    app: python-api
+    app: python-api-calls-service-b
   ports:
     - protocol: TCP
       port: 80

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-api
+  name: python-api-calls-service-b
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: python-api
+      app: python-api-calls-service-b
   template:
     metadata:
       labels:
-        app: python-api
+        app: python-api-calls-service-b
     spec:
       containers:
-        - name: python-api
-          image: fredwinrosales/python-api:latest
+        - name: python-api-calls-service-b
+          image: fredwinrosales/python-api-calls-service-b:latest
           ports:
             - containerPort: 8000
           resources:
